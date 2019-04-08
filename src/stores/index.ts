@@ -1,16 +1,9 @@
 import Vue from 'vue';
 import Vuex from 'vuex';
+import test from './test';
 Vue.use(Vuex);
-const store = new Vuex.Store({
-    state: {
-        test: 'Test Data',
-    },
-    mutations: {
-        setTest: (state, data) => {
-            state.test = data;
-        },
-    },
-    actions: {
-    },
+export default new Vuex.Store({
+    modules: {
+        test
+    }
 });
-export default store;
