@@ -1,5 +1,12 @@
 module.exports = {
   lintOnSave: false,
+  css: {
+    loaderOptions: {
+      sass: {
+        data: `@import "@/styles/app.scss";`
+      }
+    }
+  },
   configureWebpack: config => {
     if (process.env.NODE_ENV === 'production') {
       // mutate config for production...

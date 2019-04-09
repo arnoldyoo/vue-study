@@ -1,0 +1,17 @@
+.layout-menu {
+  height: 50px;
+  ul {
+    height: inherit;
+    background-color: black;
+    li {
+      width: 100px;
+      padding-top: 15px;
+    }
+    a {
+      color: white;
+      margin-top: 25px;
+      text-decoration: none;
+    }
+  }
+}
+
