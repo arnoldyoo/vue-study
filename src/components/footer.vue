@@ -1,19 +1,17 @@
 <template>
     <footer class="layout-footer">
-        <p>Posted by: arnoldyoo {{test}}</p>
+        <p>Posted by: arnoldyoo {{footerMessage}}</p>
         <p>Contact information: arnoldyoo@itam.games</p>
     </footer>
 </template>
 
 <script lang="ts">
-    import { Component, Prop, Vue } from 'vue-property-decorator';
-    import { Action } from 'vuex';
+    import { Component, Vue } from 'vue-property-decorator';
+    import { Getter } from 'vuex-class';
 
     @Component
     export default class Footer extends Vue {
-        get test() {
-                return this.$store.state.test
-        }
+        @Getter('footerMessage') footerMessage: any;
     }
 </script>
 

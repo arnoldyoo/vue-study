@@ -14,7 +14,8 @@
     "popper.js": "^1.14.7",
     "vue": "^2.6.6",
     "vue-class-component": "^6.0.0",
-    "vue-property-decorator": "^7.0.0"
+    "vue-property-decorator": "^7.0.0",
+    "vuex-class": "latest"
   },
   "devDependencies": {
     "@vue/cli-plugin-babel": "^3.5.0",

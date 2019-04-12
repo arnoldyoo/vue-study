@@ -1,14 +1,19 @@
-
 const store: any = {
     state: {
-        test: 'Test Data',
+        footerMessage: 'Test Data',
+    },
+    getters: {
+        footerMessage: (state: any) => state.footerMessage,
     },
     mutations: {
-        setTest: (state: any, data: any) => {
-            state.test = data;
+        setFooter: (state: any, data: any) => {
+            state.footerMessage = data;
         },
     },
     actions: {
+        setFooter({commit}: {commit: any}, data: any) {
+            commit('setFooter', data);
+        },
     },
 };
 export default store;
