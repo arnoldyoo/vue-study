@@ -1,4 +1,7 @@
 @import './_variable.scss';
+@import 'layouts/footer.scss';
+@import 'layouts/menu.scss';
+@import 'layouts/side-bar.scss';
 
 html {
   height: 100%;
@@ -12,13 +15,13 @@ html {
   font-family: 'Avenir', Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  text-align: center;
   color: $color-main;
   min-height: 100%;
 }
 
-@import 'layouts/footer.scss';
-@import 'layouts/menu.scss';
+#main_container {
+  transition: margin-left .5s;
+}
 
 
 

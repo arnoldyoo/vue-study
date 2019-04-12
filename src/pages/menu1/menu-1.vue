@@ -10,6 +10,26 @@
     @Component
     export default class Menu1 extends Vue {
         @Action('setFooter') setFooter: any;
+        //
+        // beforeCreate() {
+        //     console.log('before created');
+        // }
+        //
+        // created () {
+        //     console.log('created');
+        // }
+        //
+        // beforeMount() {
+        //     console.log('before mounted');
+        // }
+        //
+        // mounted() {
+        //     console.log('mounted');
+        // }
+        //
+        // destroyed() {
+        //     console.log('destroyed');
+        // }
 
         async commitState() {
             this.setFooter('change state');

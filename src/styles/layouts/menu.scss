@@ -1,14 +1,17 @@
+@import '../variable';
+
 .layout-menu {
+  text-align: center;
   height: 50px;
   ul {
     height: inherit;
-    background-color: black;
+    background-color: $color-black;
     li {
       width: 100px;
       padding-top: 15px;
     }
     a {
-      color: white;
+      color: $color-white;
       margin-top: 25px;
       text-decoration: none;
     }
